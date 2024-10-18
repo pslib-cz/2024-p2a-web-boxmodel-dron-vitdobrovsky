@@ -26,7 +26,7 @@
         background-repeat: no-repeat;
         */
         background-image: url("../images/logo.svg");
-        width: 2em;
+        width: auto;
         height: 1em;
         font-size: 1.5em;
     }
@@ -40,6 +40,89 @@
    .image-responsive {
         display: block;
         width: 100%;
+   }
+
+   .page__header {
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover;
+        background-position: top left;
+        padding: 1em;
+   }
+
+   .page__section {
+     padding: 1em;
+     margin: 0 auto;
+   }
+
+   .page__logo-container {
+        text-align: center;
+   }
+
+   .page__logo {
+        display: block;
+        padding: 1em;
+        height: 2em;
+        aspect-ratio: 42 / 24;
+        margin: 0 auto;
+   }
+
+   .page__intro{
+        color: var(--light, white);
+   }
+
+   .picture-box {
+     margin: 0;
+   }
+
+   .picture-box__caption {
+     font-size: 0.8em;
+     color: var(--gray, gray);
+     margin-top: .75;
+     text-align: center;
+   }
+
+   .text-h3 {
+     font-size: 1.2em;
+     margin-bottom: 1em;
+     font-weight: 700;
+   }
+
+   .outline-box {
+     border: 3px solid var(--primary, aqua);
+     padding: 1em;
+     margin: 1em 0;
+   }
+
+   .list li {
+     padding: 0.2em;
+   }
+
+   .list > li::marker {
+     color: var(--primary, aqua);
+   }
+
+   .button {
+        color: var(--light, white);
+        background-color: var(--primary, teal);
+        padding: 1em 2em;
+        border-radius: 0.5em;
+        font-weight: 700;
+        display: inline-block;
+        text-decoration: none;
+   }
+
+   .button:hover {
+        text-decoration: underline;
+        background-color: var(--black, black);
+   }
+
+   .button--light {
+        background-color: var(--light, white);
+        color: var(--black, black);
+   }
+
+   .button--light:hover {
+        background-color: var(--light, white);
    }
 
 }
